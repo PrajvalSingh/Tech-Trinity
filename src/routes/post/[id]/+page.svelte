@@ -1,7 +1,5 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { isOnHome } from "../../../store";
-  $isOnHome = false;
 
   export let data: {
     post: { title: string; body: string };

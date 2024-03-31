@@ -1,8 +1,6 @@
 <script>
-  import { isOnHome } from "../../store";
   export let data;
   document.title = "Tech Trinity - Memes";
-  $isOnHome = false;
 </script>
 
 {#each data.memes as meme}

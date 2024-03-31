@@ -1,9 +1,7 @@
 <script lang="ts">
   import { init, send } from "@emailjs/browser";
   import { toasts, ToastContainer, FlatToast } from "svelte-toasts";
-  import { isOnHome } from "../../store";
   import { page } from "$app/stores";
-  $isOnHome = false;
 
   init({
     publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,

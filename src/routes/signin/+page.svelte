@@ -28,13 +28,13 @@
   {#if $page.data.session}
     <p>You are now signed in!</p>
   {:else}
-    <button class="btn btn-outline" on:click={() => signIn("github")}>
+    <button class="btn btn-outline h-24 mb-2" on:click={() => signIn("github")}>
       <img src="github-icon.webp" alt="Github Logo" width="30" height="30" />
       Sign in with GitHub
     </button>
     <br />
     <button
-      class="btn btn-outline btn-warning"
+      class="btn btn-outline btn-warning h-24 mb-2"
       on:click={() => signIn("google")}
     >
       <img src="google-icon.webp" alt="Google Logo" width="30" height="30" />
@@ -42,7 +42,7 @@
     </button>
     <br />
     <button
-      class="btn btn-outline btn-primary"
+      class="btn btn-outline btn-primary h-24"
       on:click={() => signIn("discord")}
     >
       <img src="discord-icon.webp" alt="Discord Logo" width="30" height="30" />

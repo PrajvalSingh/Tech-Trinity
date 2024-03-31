@@ -70,12 +70,6 @@
 
         <img src="comment.webp" alt="Comments" height="30" width="30" />
         <p>{post.comments}</p>
-      {:else}
-        <p
-          class="bg-clip-text bg-gradient-to-r from-red-500 via-pink-500 to-purple-600"
-        >
-          Sign in to like and comment.
-        </p>
       {/if}
 
       <a
