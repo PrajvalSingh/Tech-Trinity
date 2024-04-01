@@ -1,7 +1,10 @@
 <script>
   export let data;
-  document.title = "Tech Trinity - Memes";
 </script>
+
+<head>
+  <title>Tech Trinity - Memes</title>
+</head>
 
 {#each data.memes as meme}
   <div class="flex justify-center">

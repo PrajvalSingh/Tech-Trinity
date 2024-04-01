@@ -66,7 +66,7 @@
         <p>No comments to show.</p>
       {:else if $page.data.session}
         <input
-          class="outline-none w-1/4 border-2 rounded-md border-indigo-500"
+          class="outline-none w-2/4 border-2 rounded-md border-indigo-500"
           type="text"
           placeholder="Type your comment..."
           bind:value={text}
