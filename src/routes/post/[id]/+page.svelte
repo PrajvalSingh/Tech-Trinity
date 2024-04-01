@@ -44,7 +44,9 @@
 </head>
 
 <h1 class="text-center text-3xl mx-3 mb-5">{data.post.title}</h1>
+<div class="p-2">
 {@html data.post.body}
+</div>
 
 <div class="pt-6">
   <details class="collapse collapse-arrow bg-base-200">
