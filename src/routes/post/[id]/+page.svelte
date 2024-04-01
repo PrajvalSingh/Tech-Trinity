@@ -10,7 +10,7 @@
 
   const handleSubmit = async () => {
     if (text.trim() !== "") {
-      const res = await fetch("http://localhost:3000/comments/new", {
+      const res = await fetch("https://tech-trinity-api-prajvalsingh.koyeb.app/comments/new", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,7 +29,7 @@
   };
 
   const deleteComment = async (id: string) => {
-    await fetch(`http://localhost:3000/comments/delete/${id}`, {
+    await fetch(`https://tech-trinity-api-prajvalsingh.koyeb.app/comments/delete/${id}`, {
       method: "DELETE",
     });
 

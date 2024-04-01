@@ -6,13 +6,13 @@
   onMount(async () => {
     if ($page.data.session) {
       const res = await fetch(
-        `http://localhost:3000/auth/check/${$page.data.session.user?.name}`,
+        `https://tech-trinity-api-prajvalsingh.koyeb.app/auth/check/${$page.data.session.user?.name}`,
         { method: "POST" },
       ).then(async (data) => await data.json());
 
       if (!res.found) {
         await fetch(
-          `http://localhost:3000/auth/create/${$page.data.session.user?.name}`,
+          `https://tech-trinity-api-prajvalsingh.koyeb.app/auth/create/${$page.data.session.user?.name}`,
           { method: "POST" },
         );
       }

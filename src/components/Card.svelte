@@ -13,7 +13,7 @@
   let src: string;
   async function x() {
     const res = await fetch(
-      `http://localhost:3000/posts/has_liked/${post.id}/${$page.data.session?.user?.name}`,
+      `https://tech-trinity-api-prajvalsingh.koyeb.app/posts/has_liked/${post.id}/${$page.data.session?.user?.name}`,
     ).then(async (data) => await data.json());
 
     if (res.found) {
@@ -29,7 +29,7 @@
     if (src === "like.webp") {
       src = "unlike.webp";
       await fetch(
-        `http://localhost:3000/posts/like/${post.id}/${$page.data.session?.user?.name}`,
+        `https://tech-trinity-api-prajvalsingh.koyeb.app/posts/like/${post.id}/${$page.data.session?.user?.name}`,
         {
           method: "PUT",
         },
@@ -39,7 +39,7 @@
     } else {
       src = "like.webp";
       await fetch(
-        `http://localhost:3000/posts/unlike/${post.id}/${$page.data.session?.user?.name}`,
+        `https://tech-trinity-api-prajvalsingh.koyeb.app/posts/unlike/${post.id}/${$page.data.session?.user?.name}`,
         {
           method: "PUT",
         },
