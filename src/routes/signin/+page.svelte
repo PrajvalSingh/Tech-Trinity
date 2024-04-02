@@ -54,11 +54,20 @@
 <style>
   button {
     width: 30vw;
+    /* Add padding for better touch target size on mobile devices */
+    padding: 1rem;
   }
 
+  /* Adjust the button width for smaller screens */
   @media (max-width: 400px) {
     button {
       width: 45vw;
     }
   }
+
+  @media (max-width: 400px) {
+    button {
+      width: 60vw;
+    }
+ }
 </style>

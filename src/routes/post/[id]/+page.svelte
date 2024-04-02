@@ -52,9 +52,9 @@
   <details class="collapse collapse-arrow bg-base-200">
     <summary class="collapse-title text-xl font-medium">Comments</summary>
     <div class="collapse-content">
-      {#if data.comments.length === 0}
+      {#if data.comments.length === 0 && $page.data.session}
         <input
-          class="outline-none w-1/4 border-2 rounded-md border-indigo-500"
+          class="outline-none w-2/4 border-2 rounded-md border-indigo-500"
           type="text"
           placeholder="Type your comment..."
           bind:value={text}
